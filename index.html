@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Sanjeev Maurya</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Sanjeev Maurya</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Profile-Img.png" alt="Sanjeev profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Sanjeev Maurya</h1>
+      <p class="section__text__p2">Software Developer | Coder | Problem Solving</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('Resume.html')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/sanjeev-maurya-8b49a7254'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/sanjeev007s'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/WhatsApp Image .jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Fresher</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachlor of Technology (IT) </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m a recent B.Tech graduate with a strong passion for technology and problem-solving. Throughout my
+            academic journey, I gained hands-on experience in software development, coding, and system design, working
+            on projects that not only enhanced my technical skills but also fueled my creativity. I thrive on challenges
+            and enjoy finding innovative solutions to complex problems. With a solid foundation in programming,
+            algorithms, and teamwork, I’m eager to bring fresh ideas and enthusiasm to the tech industry. Always excited
+            to learn and grow, I’m ready to contribute to meaningful projects and collaborate with dynamic teams to make
+            a lasting impact.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Software Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java EE</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Data Structure & Algorithm's</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>OPPS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/thirdeye.png" alt="Project 1" class="project-img" />
+          </div><br /><br />
+          <h2 class="experience-sub-title project-title">Third Eye</h2><br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/sanjeev007s/Third-Eye.git'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <br />
+            <img src="./assets/ecommerce.png" alt="Project 2" class="project-img" />
+          </div>
+          <br /><br />
+          <h2 class="experience-sub-title project-title">E-Commerce</h2><br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/sanjeev007s/E-Commerce-site.git'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/clearty.png" alt="Project 3" class="project-img" />
+          </div><br /><br />
+          <h2 class="experience-sub-title project-title">Clarity Game</h2><br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/sanjeev007s/Clarity-master.git'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <h1 class="title">Internship</h1>
+      <br />
+      <div class="details-container">
+        <p class="section__text__p2">Analyze InfoTech (July 2024 - Aug 2024)</p>
+        <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+          <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+            style="width: 24px; height: 24px; flex-shrink: 0;" />
+          <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+            Develop Java solutions for crime prevention
+          </p>
+        </article>
+        <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+          <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+            style="width: 24px; height: 24px; flex-shrink: 0;" />
+          <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+            Analyze crime data, create predictive models, implement algorithms
+          </p>
+        </article>
+        <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+          <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+            style="width: 24px; height: 24px; flex-shrink: 0;" />
+          <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+            Enhance coding skills, work on impactful projects, exposure to crime analytics, coding, teamwork
+          </p>
+        </article><br />
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/sanjeev007s/Third-Eye.git'">
+            Github
+          </button>
+        </div>
+      </div>
+      <br /><br /><br />
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="achievements">
+    <br /><br /><br />
+    <div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Coding Platform's</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/leetcode.jpg" alt="leetcode" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Leet Code</h2><br /><br />
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://leetcode.com/u/Sanjeev_Maurya00s/'">
+                Leetcode
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/coding ninja.jpg" alt="Coding Ninja's" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Coding Ninja's</h2><br />
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.naukri.com/code360/profile/sanjeev00s'">
+                Coding Ninja's
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/codechef.jpg" alt="Code Chef's" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Code Chef's</h2><br />
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.codechef.com/users/igsanjeev006s'">
+                Code Chef's
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/gfg.jpg" alt="Geeks for Geek's" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Geeks for Geek's</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.geeksforgeeks.org/user/igsanjecyug/'">
+                GFG
+              </button>
+            </div>
+          </div>
+        </div><br /> <br /> <br />
+        <section id="awards">
+          <div class="awards-header">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Achievements</h1>
+            <br />
+          </div>
+          <div class="details-container">
+            <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+                style="width: 24px; height: 24px; flex-shrink: 0;" />
+              <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+                Microsoft Student Ambassador
+              </p>
+            </article>
+            <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+                style="width: 24px; height: 24px; flex-shrink: 0;" />
+              <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+                International Journal of Scientific Research and Engineering Development
+              </p>
+            </article>
+            <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+                style="width: 24px; height: 24px; flex-shrink: 0;" />
+              <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+                Java 5-Star & Problem Solving 2-Star Coder at HackerRank
+              </p>
+            </article>
+            <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+                style="width: 24px; height: 24px; flex-shrink: 0;" />
+              <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+                DSA Beginner to Intermediate at Coding Ninjas/Studio
+              </p>
+            </article>
+            <article style="width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon"
+                style="width: 24px; height: 24px; flex-shrink: 0;" />
+              <p style="margin: 0; flex: 1; font-size: 1.1rem; color: #333; word-break: break-word; text-align: left;">
+                Solved 500+ DSA problems on platforms like LeetCode, CodeChef, HackerRank, and Coding Ninjas
+              </p>
+            </article>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+          </div>
+        </section>
+        <section id="contact">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+              <p><a href="mailto:ig.sanjeev00s@gmail.com">ig.sanjeev00s@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+              <p><a href="https://www.linkedin.com/in/sanjeev-maurya-8b49a7254">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img src="./assets/phone.jpg" alt="Phone icon" class="icon contact-icon" />
+              <p><a href="tel:+919793458484">+91 9793458484</a></p>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2025 Sanjeev Maurya. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
